@@ -1,0 +1,22 @@
+Started by GitHub push by DeepthiDharmappa
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/Jobtwo
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/DeepthiDharmappa/java-project1
+ > git init /var/lib/jenkins/workspace/Jobtwo # timeout=10
+Fetching upstream changes from https://github.com/DeepthiDharmappa/java-project1
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/DeepthiDharmappa/java-project1 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/DeepthiDharmappa/java-project1 # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision a375697405174cb748145561b1e95be9845044e8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a375697405174cb748145561b1e95be9845044e8 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+Finished: SUCCESS

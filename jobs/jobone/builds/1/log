@@ -1,0 +1,19 @@
+Started by GitHub push by DeepthiDharmappa
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jobone
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/DeepthiDharmappa/C-project
+ > git init /var/lib/jenkins/workspace/jobone # timeout=10
+Fetching upstream changes from https://github.com/DeepthiDharmappa/C-project
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/DeepthiDharmappa/C-project +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/DeepthiDharmappa/C-project # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE

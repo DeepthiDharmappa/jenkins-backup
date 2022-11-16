@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#include&lt;stdio.h&gt;  
+int main()    
+{    
+ int i,fact=1,number;    
+ printf(&quot;Enter a number: &quot;);    
+  scanf(&quot;%d&quot;,&amp;number);    
+    for(i=1;i&lt;=number;i++){    
+      fact=fact*i;    
+  }    
+  printf(&quot;Factorial of %d is: %d&quot;,number,fact);    
+return 0;  
+}   
+
+8</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
